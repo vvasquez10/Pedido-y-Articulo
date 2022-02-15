@@ -1,6 +1,6 @@
 public class Articulo{
-    String nombre;
-    double precio;
+    private String nombre;
+    private double precio;
 
 
     public Articulo(String nombre, double precio){

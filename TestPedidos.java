@@ -29,6 +29,10 @@ public class TestPedidos {
         Pedido pedido2 = new Pedido("Jimmy", itemsPedido2);
         Pedido pedido3 = new Pedido("Noah", itemsPedido3);
         Pedido pedido4 = new Pedido("Sam", itemsPedido4);
+
+        Pedido pedido5 = new Pedido();
+        pedido5.addArticulo(articulo2);
+        pedido5.addArticulo(articulo3);
     
         // Simulaciones de aplicaciones
         // Utiliza este código de ejemplo para probar las actualizaciones de varios pedidos
@@ -52,5 +56,9 @@ public class TestPedidos {
 
         pedido3.setListo(true);
         System.out.printf("Listo: %s\n", pedido3.listo+"\n");
+
+        System.out.println(pedido3.display()+"\n");
+
+        System.out.println(pedido5.display()+"\n");
     }
 }
